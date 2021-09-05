@@ -18,6 +18,11 @@
     "diff": "npx projen diff",
     "projen": "npx projen"
   },
+  "author": {
+    "name": "Neil Kuan",
+    "email": "guan840912@gmail.com",
+    "organization": false
+  },
   "devDependencies": {
     "@types/jest": "^27.0.1",
     "@types/node": "^10.17.0",
@@ -42,7 +47,10 @@
     "@aws-cdk/aws-ec2": "^1.121.0",
     "@aws-cdk/aws-eks": "^1.121.0",
     "@aws-cdk/aws-iam": "^1.121.0",
-    "@aws-cdk/core": "^1.121.0"
+    "@aws-cdk/core": "^1.121.0",
+    "cdk8s": "^0.33.0",
+    "cdk8s-aws-load-balancer-controller": "^2.3.5",
+    "constructs": "^3.3.141"
   },
   "bundledDependencies": [],
   "license": "Apache-2.0",
