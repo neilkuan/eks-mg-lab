@@ -1,6 +1,6 @@
 const { AwsCdkTypeScriptApp } = require('projen');
 const project = new AwsCdkTypeScriptApp({
-  cdkVersion: '1.121.0',
+  cdkVersion: '1.136.0',
   defaultReleaseBranch: 'main',
   name: 'eks-mg-lab',
   authorName: 'Neil Kuan',
@@ -9,6 +9,8 @@ const project = new AwsCdkTypeScriptApp({
     '@aws-cdk/aws-ec2',
     '@aws-cdk/aws-eks',
     '@aws-cdk/aws-iam',
+    '@aws-cdk/aws-ssm',
+    '@aws-cdk/assertions',
   ],
   depsUpgradeOptions: {
     workflowOptions: {
