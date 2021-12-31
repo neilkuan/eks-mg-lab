@@ -26,7 +26,7 @@
     "organization": false
   },
   "devDependencies": {
-    "@types/jest": "^27.0.3",
+    "@types/jest": "^27.4.0",
     "@types/node": "^14.17.0",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
@@ -54,7 +54,7 @@
     "@aws-cdk/core": "^1.136.0",
     "cdk8s": "^0.33.0",
     "cdk8s-aws-load-balancer-controller": "^2.3.6",
-    "constructs": "^3.3.173"
+    "constructs": "^3.3.175"
   },
   "bundledDependencies": [],
   "license": "Apache-2.0",
