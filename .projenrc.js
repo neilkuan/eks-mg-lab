@@ -40,4 +40,11 @@ helm repo update`,
     },
   ],
 });
+
+const buildYml = project.tryFindObjectFile('.github/workflows/build.yml');
+buildYml.addOverride('jobs.build.env', {
+  CI: 'true',
+  NODE_OPTIONS: '\'--max_old_space_size=4096\'',
+});
+
 project.synth();
