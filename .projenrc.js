@@ -1,5 +1,5 @@
-const { AwsCdkTypeScriptApp } = require('projen');
-const project = new AwsCdkTypeScriptApp({
+const { awscdk } = require('projen');
+const project = new awscdk.AwsCdkTypeScriptApp({
   cdkVersion: '1.136.0',
   defaultReleaseBranch: 'main',
   name: 'eks-mg-lab',
@@ -15,7 +15,6 @@ const project = new AwsCdkTypeScriptApp({
   depsUpgradeOptions: {
     workflowOptions: {
       labels: ['auto-approve'],
-      secret: 'AUTOMATION_GITHUB_TOKEN',
     },
   },
   autoApproveOptions: {
@@ -39,12 +38,6 @@ helm repo add eks https://aws.github.io/eks-charts
 helm repo update`,
     },
   ],
-});
-
-const buildYml = project.tryFindObjectFile('.github/workflows/build.yml');
-buildYml.addOverride('jobs.build.env', {
-  CI: 'true',
-  NODE_OPTIONS: '\'--max_old_space_size=4096\'',
 });
 
 project.synth();
