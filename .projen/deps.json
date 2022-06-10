@@ -111,6 +111,11 @@
       "type": "runtime"
     },
     {
+      "name": "@types/prettier",
+      "version": "2.6.0",
+      "type": "runtime"
+    },
+    {
       "name": "cdk8s",
       "type": "runtime"
     },

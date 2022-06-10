@@ -25,6 +25,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
     'cdk8s-aws-load-balancer-controller',
     'constructs',
     'cdk8s',
+    '@types/prettier@2.6.0',
   ],
   gitignore: ['cdk.out', 'images', 'cdk.context.json'],
   workflowBootstrapSteps: [
