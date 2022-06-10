@@ -21,6 +21,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
     secret: 'GITHUB_TOKEN',
     allowedUsernames: ['neilkuan'],
   },
+  typescriptVersion: '4.6',
   deps: [
     'cdk8s-aws-load-balancer-controller',
     'constructs',
