@@ -6,7 +6,7 @@
     },
     {
       "name": "@types/node",
-      "version": "^12",
+      "version": "^14",
       "type": "build"
     },
     {
@@ -21,7 +21,7 @@
     },
     {
       "name": "aws-cdk",
-      "version": "^1.136.0",
+      "version": "^1.76.0",
       "type": "build"
     },
     {
@@ -60,7 +60,7 @@
     },
     {
       "name": "npm-check-updates",
-      "version": "^12",
+      "version": "^16",
       "type": "build"
     },
     {
@@ -73,47 +73,51 @@
     },
     {
       "name": "ts-node",
-      "version": "^9",
       "type": "build"
     },
     {
       "name": "typescript",
-      "version": "4.6",
+      "version": "3.8",
       "type": "build"
     },
     {
+      "name": "@types/responselike",
+      "version": "1.0.0",
+      "type": "override"
+    },
+    {
+      "name": "got",
+      "version": "12.3.1",
+      "type": "override"
+    },
+    {
       "name": "@aws-cdk/assertions",
-      "version": "^1.136.0",
+      "version": "^1.76.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-ec2",
-      "version": "^1.136.0",
+      "version": "^1.76.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-eks",
-      "version": "^1.136.0",
+      "version": "^1.76.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-iam",
-      "version": "^1.136.0",
+      "version": "^1.76.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-ssm",
-      "version": "^1.136.0",
+      "version": "^1.76.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/core",
-      "version": "^1.136.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@types/prettier",
-      "version": "2.6.0",
+      "version": "^1.76.0",
       "type": "runtime"
     },
     {
@@ -131,12 +135,7 @@
     },
     {
       "name": "@aws-cdk/assert",
-      "version": "^1.136.0",
-      "type": "test"
-    },
-    {
-      "name": "@aws-cdk/assertions",
-      "version": "^1.136.0",
+      "version": "^1.76.0",
       "type": "test"
     }
   ],

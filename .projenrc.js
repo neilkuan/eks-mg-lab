@@ -1,6 +1,6 @@
 const { awscdk } = require('projen');
 const project = new awscdk.AwsCdkTypeScriptApp({
-  cdkVersion: '1.136.0',
+  cdkVersion: '1.76.0',
   defaultReleaseBranch: 'main',
   name: 'eks-mg-lab',
   authorName: 'Neil Kuan',
@@ -21,12 +21,11 @@ const project = new awscdk.AwsCdkTypeScriptApp({
     secret: 'GITHUB_TOKEN',
     allowedUsernames: ['neilkuan'],
   },
-  typescriptVersion: '4.6',
+  typescriptVersion: '3.8',
   deps: [
     'cdk8s-aws-load-balancer-controller',
     'constructs',
     'cdk8s',
-    '@types/prettier@2.6.0',
   ],
   gitignore: ['cdk.out', 'images', 'cdk.context.json'],
   workflowBootstrapSteps: [
