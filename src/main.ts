@@ -1,8 +1,8 @@
 import * as ec2 from '@aws-cdk/aws-ec2';
 import * as eks from '@aws-cdk/aws-eks';
 import { App, CfnOutput, Construct, Stack, StackProps, Tags } from '@aws-cdk/core';
-import { AL2MG } from '../src/al2-mg';
 import { BRMG } from './br-mg';
+import { AL2MG } from '../src/al2-mg';
 
 export class MyStack extends Stack {
   constructor(scope: Construct, id: string, props: StackProps = {}) {
